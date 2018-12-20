@@ -1,0 +1,31 @@
+
+
+<h2>
+  {{ title }}
+</h2>
+
+<!-- Property Binding -->
+<!-- <h2 [textContent] = "title">
+</h2> -->
+
+<ul>
+  <li *ngFor="let author of authors">
+    {{ author }}
+  </li>
+</ul>
+
+
+<!-- Attribute Binding -->
+  <!-- DOM vs Html --- Mostly 1 to 1 mapping between DOM Object's Property and Html Elements' Attributes -->
+  <!-- Few Exceptions Here and there
+  1. colspan is Html Attribute not in DOM
+  2. textContent is DOM Property not in Html -->
+
+<!-- We can use attr. as prefix to html attribute as below
+<table>
+  <tr>
+    <td [attr.colspan]="colSpan">
+
+    </td>
+  </tr>
+</table> -->
